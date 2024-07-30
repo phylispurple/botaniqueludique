@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Botanique Ludique - Cycle de Découverte Botanique</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;600&display=swap');
+
+    :root {
+        --primary-color: #3A5A40;
+        --secondary-color: #A3B18A;
+        --text-color: #344E41;
+        --background-color: #DAD7CD;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body, html {
+        font-family: 'Montserrat', sans-serif;
+        color: var(--text-color);
+        line-height: 1.6;
+        background-color: var(--background-color);
+    }
+
+    header {
+        background-color: var(--primary-color);
+        padding: 20px 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 2.5em;
+        font-weight: 600;
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+    }
+
+    .nav-links li {
+        margin-left: 30px;
+        position: relative;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        color: var(--secondary-color);
+    }
+
+    .dropdown {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background-color: var(--primary-color);
+        border-radius: 5px;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links li:hover .dropdown {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .dropdown a {
+        display: block;
+        padding: 10px 20px;
+        white-space: nowrap;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    h1, h2 {
+        font-family: 'Cormorant Garamond', serif;
+        color: var(--primary-color);
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .workshop-illustration {
+        flex: 1 1 100%;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .cycle-info, .workshop-details {
+        flex: 1 1 calc(50% - 20px);
+        font-size: 1em;
+        color: var(--secondary-color);
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    .cycle-info p, .workshop-details p {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        background-color: var(--primary-color);
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 40px;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+    }
+
+    .social-icons a {
+        color: white;
+        font-size: 24px;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+        color: var(--secondary-color);
+    }
+</style>
+<script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../../INDEX/index.html" class="logo">Botanique Ludique</a>
+            <ul class="nav-links">
+                <li><a href="../../INDEX/index.html">Accueil</a></li>
+                <li>
+                    <a href="../BISAtelierIndex.html">Ateliers</a>
+                </li>
+                <li><a href="../../A PROPOS/A propos.html">À Propos</a></li>
+                <li><a href="../../CONTACT/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Cycle de Découverte Botanique</h1>
+
+        <div class="content-wrapper">
+            <div class="workshop-illustration" style="background-image: url('https://i.pinimg.com/564x/b1/c3/e3/b1c3e3e06c7bdebb00a79b0ed1b30781.jpg');"></div>
+            
+            <div class="cycle-info">
+                <h2>À Propos du Cycle de Découverte Botanique</h2>
+                <p>Le cycle de découverte botanique est une série d'ateliers destinés à initier les participants aux merveilles du monde végétal et à l'écologie de manière ludique et interactive. Ce cycle permet d'acquérir des connaissances en botanique tout en participant à des activités pratiques et enrichissantes.</p>
+                <p>Chaque séance est conçue pour explorer un aspect différent de la botanique, allant de la balade botanique à la création d'un herbier, en passant par l'identification des plantes et la sensibilisation à l'environnement. Ce cycle est idéal pour les jeunes et les adultes qui souhaitent approfondir leur compréhension de la nature et des plantes.</p>
+            </div>
+
+          <div class="workshop-details">
+                <h2>Détails du Cycle</h2>
+                <p><strong>Objectifs :</strong> Sensibiliser les participants à l'importance des plantes et de la biodiversité, développer des compétences pratiques en botanique et promouvoir la conservation de l'environnement.</p>
+                <p><strong>Durée :</strong> 5 séances de 1,5 heures chacune</p>
+                <p><strong>Séances proposées :</strong></p>
+                <ul>
+                    <li><strong>Balade botanique :</strong> Exploration de la flore locale et découverte des plantes indigènes.</li>
+                    <li><strong>Identification des plantes :</strong> Techniques pour reconnaître et classifier les plantes.</li>
+                    <li><strong>Création d'un herbier :</strong> Collecte, pressage et présentation de spécimens de plantes.</li>
+                    <li><strong>Sensibilisation à l'environnement :</strong> Comprendre les enjeux écologiques et l'importance de la biodiversité.</li>
+                    <li><strong>Plantes envahissantes :</strong> Identification et gestion des espèces envahissantes.</li>
+                    <li><strong>Bouturage :</strong> Techniques de propagation des plantes par bouturage.</li>
+                </ul>
+            <p><strong>Matériaux fournis :</strong> Outils de collecte, presse à herbier, documentation botanique. Le type de plante fourni dépendra de la saison et des fournisseurs avec lesquels nous travaillons.</p>
+                <p><strong>Personnalisation :</strong> Il est possible de personnaliser le cycle pour répondre à des thèmes spécifiques et a des publics differents&nbsp;</p>
+                <p><strong>Lieu :</strong> Nous nous déplaçons sur vos lieux pour organiser ce cycle.</p>
+            <p><strong>Tarif :</strong> Devis sur demande (réductions possibles pour les groupes scolaires)</p>
+              <p><strong>Public :</strong> Enfants et adolescents</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Botanique Ludique. Tous droits réservés.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/BotaniqueLudique" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/botaniqueludique" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/BotaniqueLudique" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/BotaniqueLudique" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

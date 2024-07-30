@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Botanique Ludique - Contact</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;600&display=swap');
+
+    :root {
+        --primary-color: #3A5A40;
+        --secondary-color: #A3B18A;
+        --text-color: #344E41;
+        --background-color: #DAD7CD;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body, html {
+        font-family: 'Montserrat', sans-serif;
+        color: var(--text-color);
+        line-height: 1.6;
+        background-color: var(--background-color);
+    }
+
+    header {
+        background-color: var(--primary-color);
+        padding: 20px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 2.5em;
+        font-weight: 600;
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+    }
+
+    .nav-links li {
+        margin-left: 30px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        color: var(--secondary-color);
+    }
+
+    main {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    h1, h2 {
+        font-family: 'Cormorant Garamond', serif;
+        color: var(--primary-color);
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    .contact-info {
+        margin-top: 40px;
+    }
+
+    .contact-info p {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .contact-info i {
+        margin-right: 10px;
+        color: var(--primary-color);
+    }
+
+    .map-container {
+        width: 100%;
+        height: 400px;
+        margin-top: 30px;
+    }
+
+    .contact-form {
+        margin-top: 40px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid var(--secondary-color);
+        border-radius: 5px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .contact-form button {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .contact-form button:hover {
+        background-color: var(--secondary-color);
+    }
+
+    .faq {
+        margin-top: 40px;
+    }
+
+    .faq h2 {
+        margin-bottom: 20px;
+    }
+
+    .faq p {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        background-color: var(--primary-color);
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 40px;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+    }
+
+    .social-icons a {
+        color: white;
+        font-size: 24px;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+        color: var(--secondary-color);
+    }
+</style>
+<script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../INDEX/index.html" class="logo">Botanique Ludique</a>
+            <ul class="nav-links">
+                <li><a href="../INDEX/index.html">Accueil</a></li>
+                <li><a href="../ATELIER/BISAtelierIndex.html">Ateliers</a></li>
+                <li><a href="../A PROPOS/A propos.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contactez-nous</h1>
+        
+        <p>Vous avez des questions sur nos ateliers ? Vous souhaitez organiser un événement personnalisé ? N'hésitez pas à nous contacter, nous serons ravis d'échanger avec vous !</p>
+
+        <div class="contact-info">
+            <h2>Informations de contact</h2>
+            <p><i class="fas fa-map-marker-alt"></i> 9 impasse du quai voltaire, 78230 Le Pecq, France</p>
+            <p><i class="fas fa-phone"></i> 06.09.83.16.06</p>
+            <p><i class="fas fa-envelope"></i> botaniqueludique@gmail.com</p>
+            <p><i class="fas fa-clock"></i> Lundi - Samedi : 9h - 18h</p>
+        </div>
+
+        <div class="faq">
+            <h2>FAQ</h2>
+            <p><strong>Q : Quels types d'ateliers proposez-vous ?</strong></p>
+            <p>R : Nous proposons une variété d'ateliers botaniques, y compris la création de terrariums, de kokedamas, de tableaux végétaux, et bien plus encore.</p>
+            <p><strong>Q : Comment puis-je réserver un atelier ?</strong></p>
+            <p>R : Vous pouvez nous contacter directement par mail ou par téléphone pour réserver un atelier.</p>
+            <p><strong>Q : Doit-on apporter le matériel nous-mêmes ?</strong></p>
+            <p>R : Nous nous occupons de fournir tout le matériel nécessaire, vous n'avez qu'à venir le jour de l'atelier.</p>
+            <p><strong>Q : Quels sont les tarifs de vos ateliers ?</strong></p>
+            <p>R : Les tarifs varient en fonction du type d'atelier et du nombre de participants. Veuillez nous contacter pour un devis personnalisé.</p>
+            <p><strong>Q : Proposez-vous des ateliers pour les enfants ?</strong></p>
+            <p>R : Oui, nous avons des ateliers spécialement conçus pour les enfants, avec des activités adaptées à leur âge pour les initier à la botanique de manière ludique.</p>
+            <p><strong>Q : Organisez-vous des événements privés ?</strong></p>
+            <p>R : Oui, nous pouvons organiser des ateliers privés pour des événements spéciaux tels que des anniversaires, des mariages, ou des ateliers d'entreprise. Contactez-nous pour plus de détails.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Botanique Ludique. Tous droits réservés.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/BotaniqueLudique" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/botaniqueludique" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/BotaniqueLudique" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/BotaniqueLudique" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
